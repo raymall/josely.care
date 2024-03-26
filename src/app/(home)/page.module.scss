@@ -1,0 +1,107 @@
+@use '../../styles/unit' as u;
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: u.rem-calc(375);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: u.rem-calc(10);
+}
+
+.Header {
+  width: 100%;
+  margin-bottom: u.rem-calc(32);
+
+  &_profile {
+    width: u.rem-calc(100);
+    height: u.rem-calc(100);
+    margin: 0 auto u.rem-calc(16);
+    border-radius: 100%;
+    border: u.rem-calc(4) solid #4477CE;
+    overflow: hidden;
+  
+    &Picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+  
+  &_title {
+    display: block;
+    margin-bottom: u.rem-calc(8);
+    font-family: var(--font-chivo);
+    font-style: normal;
+    font-weight: 900;
+    font-size: u.rem-calc(32);
+    text-align: center;
+  }
+  
+  &_subtitle {
+    display: block;
+    margin-bottom: u.rem-calc(2);
+    font-family: var(--font-fira-sans);
+    font-weight: 500;
+    font-size: u.rem-calc(16);
+    text-align: center;
+  }
+  
+  &_company {
+    display: block;
+    font-family: var(--font-fira-sans);
+    font-weight: 400;
+    font-size: u.rem-calc(11);
+    text-align: center;
+    color: #9DB2BF;
+  }
+}
+
+.Action {
+  width: 100%;
+  margin-bottom: u.rem-calc(32);
+  
+  &_title {
+    display: block;
+    margin-bottom: u.rem-calc(8);
+    font-family: var(--font-chivo);
+    font-style: normal;
+    font-weight: 700;
+    font-size: u.rem-calc(18);
+    text-align: left;
+    // letter-spacing: u.rem-calc(1);
+  }
+
+  &_buttons {
+    padding: u.rem-calc(0 16);
+    border: u.rem-calc(1) solid #27374D;
+    border-radius: u.rem-calc(8);
+  }
+}
+
+.Social {
+  width: 100%;
+  margin-bottom: u.rem-calc(32);
+  
+  &_title {
+    display: block;
+    margin-bottom: u.rem-calc(8);
+    font-family: var(--font-chivo);
+    font-style: normal;
+    font-weight: 700;
+    font-size: u.rem-calc(18);
+    text-align: left;
+    // letter-spacing: u.rem-calc(1);
+  }
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+}
+
+@media (prefers-reduced-motion) {
+}

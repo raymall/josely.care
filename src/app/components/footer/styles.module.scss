@@ -1,0 +1,11 @@
+@use '../../../styles/unit' as u;
+
+.Footer {
+  max-width: u.rem-calc(375);
+  margin: 0 auto;
+  padding: u.rem-calc(10);
+  font-family: var(--font-work-sans);
+  font-size: u.rem-calc(11);
+  line-height: u.rem-calc(11);
+  text-align: center;
+}
