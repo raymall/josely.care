@@ -4,7 +4,7 @@ import { WhatsappIcon } from '@/app/ui/icons'
 import styles from './styles.module.scss'
 
 export default function WhatsAppMessageButton() {
-  const encodedMessage = encodeURIComponent('Hola Josely! Quisiera que me asesores sobre los diferentes productos que ofreces de Seguros de Vida y Salud internacional. ¿Podrías ayudarme?')
+  const encodedMessage = encodeURIComponent('Hola Josely! Quisiera que me asesores sobre los diferentes productos que ofreces de seguros.')
 
   return (
     <Link

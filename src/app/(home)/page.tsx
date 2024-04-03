@@ -41,8 +41,8 @@ export default function Home() {
       <section className={styles.Action}>
         <h2 className={styles.Action_title}>Contáctame</h2>
         <div className={styles.Action_buttons}>
-          <AddContactButton />
           <WhatsAppMessageButton />
+          <AddContactButton />
           <EmailButton />
           <ScheduleButton />
           <CallButton />

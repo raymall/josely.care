@@ -7,7 +7,6 @@ export default function WhatsAppMessageButton() {
   return (
     <Link
       href='/files/contact-card.vcf'
-      target='_blank'
       className={styles.Button}
     >
       <i className={styles.Button_icon}>
