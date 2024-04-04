@@ -7,7 +7,7 @@ export default function ScheduleButton() {
 
   return (
     <Link
-      href='https://calendly.com/joselymendez-seguros/asesoria'
+      href='https://calendly.com/joselyseguros/asesoria'
       target='_blank'
       className={styles.Button}
     >
