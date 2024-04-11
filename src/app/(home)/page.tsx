@@ -73,7 +73,7 @@ export default function Home() {
             Cuento con <strong><i>más de 10 años de experiencia</i></strong> en el sector asegurador; he desempeñando varias funciones destacando la de gerente regional de servicios en una de las empresas de seguros más importantes de República Dominicana.
           </p>  
           <p>
-            Mi experiencia está relacionada a toda la experiencia de servicios, desde la venta y posventa de seguros de salud local e internacional, así como seguros de vida y riesgos generales.
+            Mis conocimientos están relacionados a toda la experiencia de servicios, desde la venta y posventa de seguros de salud local e internacional, así como seguros de vida y riesgos generales.
           </p>  
           <p>
             <strong><i>Servir es una de mis grandes pasiones</i></strong> y es por esto que me encantaría acompañarte a encontrar la mejor cobertura que realmente se adapte a ti.
