@@ -70,7 +70,7 @@ export default function Home() {
             Soy licenciada en administración de empresas y tengo un posgrado en Gestión Humana.
           </p>  
           <p>
-            Cuento con <strong><i>más de 10 años de experiencia</i></strong> en el sector asegurador; he desempeñando varias funciones destacando la de gerente regional de servicios en una de las empresas de seguros más destacadas de República Dominicana.
+            Cuento con <strong><i>más de 10 años de experiencia</i></strong> en el sector asegurador; he desempeñando varias funciones destacando la de gerente regional de servicios en una de las empresas de seguros más importantes de República Dominicana.
           </p>  
           <p>
             Mi experiencia está relacionada a toda la experiencia de servicios, desde la venta y posventa de seguros de salud local e internacional, así como seguros de vida y riesgos generales.

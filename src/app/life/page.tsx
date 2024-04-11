@@ -47,7 +47,7 @@ export default function HealthPage() {
     },
     {
       label: 'Seguro de vida con devolución de prima',
-      description: 'Protege a tus seres queridos durante el tiempo que decidas. Al final del periodo contratado, si no se hizo pago a los beneficiarios, como titular, recibes la prima total pagada menos impuestos.',
+      description: 'Protege a tus seres queridos durante el tiempo que decidas. Al final del período contratado, si no se hizo pago a los beneficiarios, como titular, recibes la prima total pagada menos impuestos.',
       message: 'Hola Josely! Quisiera conocer más sobre los seguros de vida con devolución de prima.'
     },
     {
