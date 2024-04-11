@@ -1,4 +1,5 @@
 @use '../../../../styles/unit' as u;
+@use '../../../../styles/colors' as c;
 
 .Button {
   $_this: &;
@@ -12,8 +13,8 @@
   font-weight: 500;
   font-size: u.rem-calc(16);
   text-align: left;
-  color: white;
-  // border: u.rem-calc(1) solid #27374D;
+  color: #F3F8FF;
+  // border: u.rem-calc(1) solid c.$border;
   // border-radius: u.rem-calc(8);
 
   &_icon {

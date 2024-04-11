@@ -1,3 +1,11 @@
+import ArrowDownIconSvg from '../../../public/icons/arrow-down.svg';
+export const ArrowDownIcon = ArrowDownIconSvg
+
+import HealthIconSvg from '../../../public/icons/health-solid.svg';
+export const HealthIcon = HealthIconSvg
+
+import LifeIconSvg from '../../../public/icons/life-solid.svg';
+export const LifeIcon = LifeIconSvg
 
 import WhatsappIconSvg from '../../../public/icons/whatsapp.svg';
 export const WhatsappIcon = WhatsappIconSvg
