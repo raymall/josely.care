@@ -12,7 +12,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-import profilePicture from "../../../public/images/profile-picture.jpg"
+import profilePicture from "../../../public/images/profile-picture-v2.jpg"
 import { HealthIcon, LifeIcon } from "../ui/icons"
 import { work_sans, fira_sans, chivo } from "../ui/fonts"
 import styles from "./page.module.scss"
