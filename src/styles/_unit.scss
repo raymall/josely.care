@@ -1,4 +1,6 @@
 @use 'sass:math';
+@use 'sass:list';
+@use "sass:meta";
 
 /// Removes the unit (e.g. px, em, rem) from a value, returning the number only.
 ///
@@ -18,7 +20,7 @@
 /// @returns {Number} A number in rems, calculated based on the given value and the base pixel value. rem values are passed through as is.
 @function -zf-to-rem($value, $base: null) {
   // Check if the value is a number
-  @if type-of($value) != 'number' {
+  @if meta.type-of($value) != 'number' {
     @if $unit-warnings {
       @warn inspect($value) + ' was passed to rem-calc(), which is not a number.';
     }
@@ -26,12 +28,12 @@
   }
 
   // Transform em into rem if someone hands over 'em's
-  @if unit($value) == 'em' {
+  @if math.unit($value) == 'em' {
     $value: strip-unit($value) * 1rem;
   }
 
   // Calculate rem if units for $value is not rem or em
-  @if unit($value) != 'rem' {
+  @if math.unit($value) != 'rem' {
     $value: math.div(strip-unit($value), strip-unit($base)) * 1rem;
   }
 
@@ -50,14 +52,14 @@
 @function rem-calc($values) {
   $base: 16px;
   $rem-values: ();
-  $count: length($values);
+  $count: list.length($values);
 
   @if $count == 1 {
     @return -zf-to-rem($values, $base);
   }
 
   @for $i from 1 through $count {
-    $rem-values: append($rem-values, -zf-to-rem(nth($values, $i), $base));
+    $rem-values: list.append($rem-values, -zf-to-rem(list.nth($values, $i), $base));
   }
 
   @return $rem-values;
