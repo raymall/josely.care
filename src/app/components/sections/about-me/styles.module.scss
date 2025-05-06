@@ -1,0 +1,118 @@
+@use 'vw-calc' as vw;
+@use 'colors' as c;
+@use 'unit' as u;
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+.AboutMe {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: vw.vw-calc(24 32) vw.vw-calc(24 80);
+  overflow: hidden;
+
+  &_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: vw.vw-calc(40 80);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width: u.rem-calc(1024)) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &_caption {
+    display: inline-block;
+    margin-bottom: u.rem-calc(12);
+    font-size: vw.vw-calc(9 12);
+    font-family: var(--font-chivo);
+    font-weight: 600;
+    letter-spacing: u.rem-calc(2); 
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: u.rem-calc(4);
+    color: c.$black;
+  }
+
+  &_title {
+    $_this: &;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    z-index: 10;
+    margin-bottom: vw.vw-calc(16 24);
+    font-size: vw.vw-calc(32 64);
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    text-align: left;
+    letter-spacing: u.rem-calc(-1);
+
+    span {
+      color: c.$light-blue;
+    }
+
+    span#{$_this}__highlight {
+      translate: .25ch;
+      font-weight: 800;
+      font-style: italic;
+      letter-spacing: u.rem-calc(2);
+      color: c.$blue;
+    }
+  }
+
+  &_info {
+    justify-self: end;
+    width: 100%;
+
+    @media screen and (min-width: u.rem-calc(1024)) {
+      max-width: u.rem-calc(800);
+    }
+
+    p {
+      margin: vw.vw-calc(16 24) 0;
+      font-size: vw.vw-calc(14 24);
+      font-family: var(--font-ibm-plex-serif);
+      font-weight: 600;
+      line-height: 1.4;
+      color: c.$blue;
+
+      strong {
+        font-weight: 700;
+        border-bottom: vw.vw-calc(2 4) solid c.$blue;
+      }
+    }
+  }
+
+  &_mainImage {
+    display: none;
+    position: relative;
+    justify-self: start;
+    aspect-ratio: 274 / 365;
+    width: 100%;
+    overflow: hidden;
+
+    &__narrow {
+      display: block;
+    }
+
+    @media screen and (min-width: u.rem-calc(1024)) {
+      display: block;
+
+      &__narrow {
+        display: none;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
