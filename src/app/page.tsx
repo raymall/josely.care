@@ -1,14 +1,13 @@
 import clsx from 'clsx'
 
-import { chivo, encode_sans, ibm_plex_serif } from '../../ui/fonts'
-import styles from './page.module.scss'
+import { chivo, encode_sans, ibm_plex_serif } from '@/app/ui/fonts'
 import AboutMeSection from '@/app/components/sections/about-me'
 import HeroSection from '@/app/components/sections/hero'
 import DividerSection from '@/app/components/sections/divider'
 import ServicesSection from '@/app/components/sections/services'
 import Footer from '@/app/components/footer'
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className={ clsx(chivo.variable, encode_sans.variable, ibm_plex_serif.variable) }>
       {/* <div className={styles.Hero_backgroundImage}>

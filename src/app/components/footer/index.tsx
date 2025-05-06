@@ -1,8 +1,8 @@
 'use client'
 
-import { AddContactIcon, InstagramIcon, LinkedinIcon } from '@/app/ui/icons'
+import { InstagramIcon, LinkedinIcon } from '@/app/ui/icons'
 import styles from './styles.module.scss'
-import LogoGrupoMonteroTorres from '../../../../public/images/logo-grupo-montero-torres.svg';
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -44,7 +44,12 @@ export default function Footer() {
               target='_blank'
               href="https://www.instagram.com/grupomonterotorres/"
             >
-              <LogoGrupoMonteroTorres />
+              <Image
+                src="/images/logo-grupo-montero-torres.svg"
+                alt="Grupo Montero Torres Logo"
+                width={200}
+                height={50}
+              />
             </a>
             {/* <a
               target='_blank'
