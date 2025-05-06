@@ -1,0 +1,90 @@
+@use 'vw-calc' as vw;
+@use 'colors' as c;
+@use 'unit' as u;
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+.Contact {
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: vw.vw-calc(24 32) 0;
+  overflow: hidden;
+
+  &_content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    gap: vw.vw-calc(20 80);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width: u.rem-calc(600)) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+    }
+  }
+
+  &_caption {
+    display: inline-block;
+    margin-bottom: u.rem-calc(16);
+    font-size: vw.vw-calc(9 12);
+    font-family: var(--font-chivo);
+    font-weight: 600;
+    letter-spacing: u.rem-calc(2); 
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: u.rem-calc(4);
+    color: c.$black;
+  }
+
+  &_title {
+    $_this: &;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    z-index: 10;
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    text-align: left;
+
+    span {
+      font-size: vw.vw-calc(18 30);
+      color: c.$light-blue;
+    }
+
+    a#{$_this}__highlight {
+      display: inline-block;
+      translate: .25ch;
+      font-weight: 800;
+      font-size: vw.vw-calc(20 32);
+      font-style: italic;
+      letter-spacing: u.rem-calc(1);
+      color: c.$blue;
+      border-bottom: vw.vw-calc(4 6) solid c.$blue;
+      transition: letter-spacing 250ms ease;
+
+      &:hover {
+        letter-spacing: u.rem-calc(4);
+      }
+    }
+  }
+
+  &_mainImage {
+    position: relative;
+    justify-self: start;
+    aspect-ratio: 274 / 365;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
