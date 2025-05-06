@@ -45,6 +45,9 @@ importers:
       typescript:
         specifier: ^5
         version: 5.8.3
+      vw-calc:
+        specifier: ^1.0.4
+        version: 1.0.4
 
 packages:
 
@@ -2499,6 +2502,9 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+
+  vw-calc@1.0.4:
+    resolution: {integrity: sha512-JNmukuVD5Jmvu6PuT9ubE4EHXHR2qSn1VK3/4bYGECH3o4qWvG1pZLNSlnJ2XRsSaTy6y+NqwvPM4X2WY59bPw==}
 
   which-boxed-primitive@1.1.1:
     resolution: {integrity: sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA==}
@@ -5405,6 +5411,8 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  vw-calc@1.0.4: {}
 
   which-boxed-primitive@1.1.1:
     dependencies:

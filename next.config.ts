@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next'
+import path from 'path'
 
 const nextConfig: NextConfig = {
   turbopack: {
@@ -8,6 +9,9 @@ const nextConfig: NextConfig = {
         as: '*.js',
       },
     },
+  },
+  sassOptions: {
+    includePaths: [path.join(process.cwd(), 'src/styles')],
   },
 }
 
