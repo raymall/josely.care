@@ -1,11 +1,95 @@
-@use '../../../styles/unit' as u;
+@use 'vw-calc' as vw;
+@use 'colors' as c;
+@use 'unit' as u;
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 
 .Footer {
-  max-width: u.rem-calc(375);
+  width: 100%;
   margin: 0 auto;
-  padding: u.rem-calc(10);
-  font-family: var(--font-work-sans);
-  font-size: u.rem-calc(11);
-  line-height: u.rem-calc(11);
+  padding: vw.vw-calc(24 32) vw.vw-calc(24 80);
   text-align: center;
+  color: c.$blue;
+
+  small {
+    display: block;
+    font-family: var(--font-chivo);
+    font-size: u.rem-calc(12);
+    line-height: 1.25;
+  }
+
+  &_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: vw.vw-calc(32 48);
+    padding-bottom: vw.vw-calc(40 80);
+
+    @media screen and (min-width: u.rem-calc(600)) {
+      grid-template-columns: .75fr 1fr;
+    }
+  }
+
+  &_title {
+    position: relative;
+    justify-self: center;
+    z-index: 10;
+    margin-bottom: vw.vw-calc(16 24);
+    font-size: vw.vw-calc(24 36);
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: u.rem-calc(-1);
+    color: c.$blue;
+
+    @media screen and (min-width: u.rem-calc(600)) {
+      justify-self: start;
+    }
+  }
+
+  &_social {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: u.rem-calc(12);
+
+    @media screen and (min-width: u.rem-calc(600)) {
+      justify-content: start;
+    }
+
+    &_link {
+      svg {
+        width: u.rem-calc(44);
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &_allies {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: u.rem-calc(24);
+
+    @media screen and (min-width: u.rem-calc(600)) {
+      flex-flow: row nowrap;
+      justify-content: start;
+    }
+
+    a {
+      display: block;
+      max-width: u.rem-calc(220);
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
