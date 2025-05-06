@@ -1,21 +1,21 @@
 'use client'
 
-import AddContactButton from "../components/buttons/add-contact"
-import WhatsAppMessageButton from "../components/buttons/whatsapp-message"
-import EmailButton from "../components/buttons/email"
-import ScheduleButton from "../components/buttons/schedule"
-import CallButton from "../components/buttons/call"
-import LinkedinButton from "../components/buttons/linkedin"
+import AddContactButton from '../components/buttons/add-contact'
+import WhatsAppMessageButton from '../components/buttons/whatsapp-message'
+import EmailButton from '../components/buttons/email'
+import ScheduleButton from '../components/buttons/schedule'
+import CallButton from '../components/buttons/call'
+import LinkedinButton from '../components/buttons/linkedin'
 
-import clsx from "clsx"
-import { useState } from "react"
-import Image from "next/image"
-import Link from "next/link"
+import clsx from 'clsx'
+import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import profilePicture from "../../../public/images/profile-picture-v2.jpg"
-import { HealthIcon, LifeIcon } from "../ui/icons"
-import { work_sans, fira_sans, chivo } from "../ui/fonts"
-import styles from "./page.module.scss"
+import profilePicture from '../../../public/images/profile-picture-v2.jpg'
+import { HealthIcon, LifeIcon } from '../ui/icons'
+import { work_sans, fira_sans, chivo } from '../ui/fonts'
+import styles from './page.module.scss'
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
