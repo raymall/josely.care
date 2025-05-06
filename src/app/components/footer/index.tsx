@@ -1,13 +1,62 @@
-import clsx from "clsx"
+'use client'
 
-import { work_sans } from "@/app/ui/fonts"
-import styles from "./styles.module.scss"
+import { AddContactIcon, InstagramIcon, LinkedinIcon } from '@/app/ui/icons'
+import styles from './styles.module.scss'
+import LogoGrupoMonteroTorres from '../../../../public/images/logo-grupo-montero-torres.svg';
 
 export default function Footer() {
   return (
-    <footer className={clsx(work_sans.variable, styles.Footer)}>
+    <footer className={styles.Footer}>
+      <div className={styles.Footer_content}>
+        <div>
+          <h2 className={styles.Footer_title}>Sígueme</h2>
+          <nav className={styles.Footer_social}>
+            <a
+              href="https://instagram.com/josely.care"
+              target={'_blank'}
+              className={styles.Footer_social_link}
+            >
+              <InstagramIcon />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joselymendezcatano/"
+              target={'_blank'}
+              className={styles.Footer_social_link}
+            >
+              <LinkedinIcon />
+              <span>LinkedIn</span>
+            </a>
+            {/* <a
+              href="/files/contact-card.vcf"
+              target={'_blank'}
+              className={styles.Footer_social_link}
+            >
+              <AddContactIcon />
+              <span>Agrégame a tus contactos</span>
+            </a> */}
+          </nav>
+        </div>
+        <div>
+          <h2 className={styles.Footer_title}>Aliados</h2>
+          <nav className={styles.Footer_allies}>
+            <a
+              target='_blank'
+              href="https://www.instagram.com/grupomonterotorres/"
+            >
+              <LogoGrupoMonteroTorres />
+            </a>
+            {/* <a
+              target='_blank'
+              href="https://www.instagram.com/grupomonterotorres/"
+            >
+              <LogoGrupoMonteroTorres />
+            </a> */}
+          </nav>
+        </div>
+      </div>
       <small>
-        © 2024 Josely Méndez Catano, Asesora de Seguros.<br />
+        © {new Date().getFullYear()} Josely Méndez Catano, Asesora de Seguros.<br />
         Todos los derechos reservados.
       </small>
     </footer>
