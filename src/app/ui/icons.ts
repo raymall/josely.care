@@ -10,6 +10,9 @@ export const LifeIcon = LifeIconSvg
 import WhatsappIconSvg from '../../../public/icons/whatsapp.svg';
 export const WhatsappIcon = WhatsappIconSvg
 
+import InstagramIconSvg from '../../../public/icons/instagram.svg';
+export const InstagramIcon = InstagramIconSvg
+
 import LinkedinIconSvg from '../../../public/icons/linkedin.svg';
 export const LinkedinIcon = LinkedinIconSvg
 
