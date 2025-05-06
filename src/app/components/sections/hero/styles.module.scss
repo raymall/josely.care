@@ -1,0 +1,113 @@
+@use 'vw-calc' as vw;
+@use 'colors' as c;
+@use 'unit' as u;
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+.Hero {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: vw.vw-calc(24 32) vw.vw-calc(24 80);
+  overflow: hidden;
+
+  &_backgroundImage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 110vw;
+    height: 110vh;
+    filter: blur(150px);
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &_content {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: u.rem-calc(80);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+  }
+
+  &_info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: vw.vw-calc(32 48);
+  }
+
+  &_title {
+    $_this: &;
+    position: relative;
+    z-index: 10;
+    font-size: vw.vw-calc(36 96);
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: u.rem-calc(-1);
+
+    span {
+      color: c.$light-blue;
+    }
+
+    span#{$_this}__highlight {
+      display: inline-block;
+      scale: 1.15;
+      margin-right: .5ch;
+      font-weight: 800;
+      font-style: italic;
+      color: c.$blue;
+    }
+
+    br {
+      display: none;
+
+      @media screen and (min-width: u.rem-calc(600)) {
+        display: inline;
+      }
+    }
+  }
+
+  &_button {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: vw.vw-calc(44 60);
+    padding: u.rem-calc(4 4 4 24);
+    font-size: vw.vw-calc(20 24);
+    font-family: var(--font-chivo);
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: u.rem-calc(-1);
+    color: c.$white;
+    border-radius: u.rem-calc(56);
+    background-color: c.$blue;
+
+    &_icon {
+      display: block;
+      position: relative;
+      width: vw.vw-calc(44 56);
+      height: auto;
+      margin-left: u.rem-calc(24);
+    }
+  }
+}
