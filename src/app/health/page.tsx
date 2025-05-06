@@ -1,12 +1,12 @@
 'use client'
 
-import clsx from "clsx"
-import Link from "next/link"
-import { useState } from "react"
+import clsx from 'clsx'
+import Link from 'next/link'
+import { useState } from 'react'
 
-import { work_sans, fira_sans, chivo } from "../ui/fonts"
-import { ArrowDownIcon, WhatsappIcon } from "../ui/icons"
-import styles from "./page.module.scss"
+import { work_sans, fira_sans, chivo } from '../ui/fonts'
+import { ArrowDownIcon, WhatsappIcon } from '../ui/icons'
+import styles from './page.module.scss'
 
 export default function HealthPage() {
 
