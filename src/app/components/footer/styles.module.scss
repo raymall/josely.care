@@ -59,8 +59,9 @@
     }
 
     &_link {
-      svg {
+      img {
         width: u.rem-calc(44);
+        height: auto;
       }
 
       span {
@@ -86,7 +87,7 @@
       max-width: u.rem-calc(220);
     }
 
-    svg {
+    img {
       display: block;
       width: 100%;
       height: auto;
