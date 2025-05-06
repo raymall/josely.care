@@ -79,7 +79,6 @@ export default function ServicesSection() {
           {/* <p>Cuidar de nuestra salud es una inversión en bienestar, tranquilidad y calidad de vida. Un seguro de salud no solo te protege frente a imprevistos médicos, sino que también te brinda acceso a una red de servicios, profesionales y centros de atención que responden cuando más lo necesitas.</p>
           <p>Quiero ayudarte a elegir una cobertura que se adapte a tus necesidades y a las de tu familia, para que te sientas respaldado ante cualquier eventualidad. Porque tu salud no puede esperar, y tampoco debería complicarse el proceso de protegerla.</p> */}
           <div className={styles.Services_actions}>
-            {/* <small className={styles.Services_caption}>Más información</small> */}
             <div className={styles.Services_buttons}>
               <a
                 href={`https://wa.me/18296452301?text=${encodeURIComponent('Hola Josely, necesito un seguro de salud')}`}
@@ -113,7 +112,6 @@ export default function ServicesSection() {
           {/* <p>El seguro de vida es un acto de amor y responsabilidad. Es una herramienta que permite dejar protegidos a los que más queremos, asegurando estabilidad y respaldo en los momentos más difíciles.</p>
           <p>Mi propósito es acompañarte a elegir una póliza que hable por ti cuando ya no puedas hacerlo. Que transmita cuidado, previsión y compromiso hacia tu familia. Porque la vida es incierta, pero tu tranquilidad y la de los tuyos no tiene por qué serlo.</p> */}
           <div className={styles.Services_actions}>
-            {/* <small className={styles.Services_caption}>Más información</small> */}
             <div className={styles.Services_buttons}>
               <a
                 href={`https://wa.me/18296452301?text=${encodeURIComponent('Hola Josely, necesito información sobre los seguros de vida.')}`}
@@ -135,7 +133,6 @@ export default function ServicesSection() {
           {/* <p>Vivimos rodeados de riesgos que muchas veces no podemos evitar, pero sí podemos anticipar. El seguro de riesgos generales protege tus bienes, tu patrimonio y tu tranquilidad frente a situaciones como robos, accidentes, incendios y más.</p>
           <p>Estoy aquí para ayudarte a identificar esas áreas vulnerables y convertirlas en fortalezas, con una cobertura que se adapte a tu realidad. Porque cuando sabes que estás protegido, todo fluye con más confianza.</p> */}
           <div className={styles.Services_actions}>
-            {/* <small className={styles.Services_caption}>Más información</small> */}
             <div className={styles.Services_buttons}>
               <a
                 href={`https://wa.me/18296452301?text=${encodeURIComponent('Hola Josely, necesito un seguro de auto')}`}

@@ -12,7 +12,7 @@
   width: 100vw;
   height: 100vh;
   margin: 0;
-  padding: vw.vw-calc(24 32) vw.vw-calc(24 80);
+  padding: vw.vw-calc(48 64) vw.vw-calc(24 80);
   overflow: hidden;
 
   &_backgroundImage {
@@ -58,9 +58,13 @@
     font-weight: 500;
     font-style: normal;
     line-height: 1;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: u.rem-calc(-1);
+
+    @media screen and (min-width: u.rem-calc(1024)) {
+      text-align: left;
+    }
 
     span {
       color: c.$light-blue;
@@ -73,14 +77,6 @@
       font-weight: 800;
       font-style: italic;
       color: c.$blue;
-    }
-
-    br {
-      display: none;
-
-      @media screen and (min-width: u.rem-calc(600)) {
-        display: inline;
-      }
     }
   }
 

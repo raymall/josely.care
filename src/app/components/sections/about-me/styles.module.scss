@@ -8,7 +8,7 @@
   width: 100vw;
   height: auto;
   margin: 0;
-  padding: vw.vw-calc(24 32) vw.vw-calc(24 80);
+  padding: vw.vw-calc(48 64) vw.vw-calc(24 80);
   overflow: hidden;
 
   &_content {
@@ -71,21 +71,16 @@
     justify-self: end;
     width: 100%;
 
-    @media screen and (min-width: u.rem-calc(1024)) {
-      max-width: u.rem-calc(800);
-    }
-
     p {
       margin: vw.vw-calc(16 24) 0;
       font-size: vw.vw-calc(14 24);
       font-family: var(--font-ibm-plex-serif);
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1.4;
       color: c.$blue;
 
       strong {
         font-weight: 700;
-        border-bottom: vw.vw-calc(2 4) solid c.$blue;
       }
     }
   }
