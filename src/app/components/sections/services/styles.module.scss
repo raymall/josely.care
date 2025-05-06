@@ -10,7 +10,8 @@
   width: 100%;
   height: auto;
   margin: 0;
-  padding: vw.vw-calc(24 32) vw.vw-calc(24 80);
+  padding: vw.vw-calc(48 64) vw.vw-calc(24 80);
+  background: rgba(c.$light-blue, .05);
   overflow: hidden;
 
   &_content {
@@ -32,6 +33,7 @@
     font-weight: 600;
     letter-spacing: u.rem-calc(2); 
     text-transform: uppercase;
+    text-align: center;
     text-decoration: underline;
     text-underline-offset: u.rem-calc(4);
     color: c.$black;
@@ -59,7 +61,7 @@
       translate: .25ch;
       font-weight: 800;
       font-style: italic;
-      letter-spacing: u.rem-calc(2);
+      letter-spacing: u.rem-calc(1);
       color: c.$blue;
     }
   }
@@ -82,7 +84,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: u.rem-calc(16 24);
+    padding: u.rem-calc(12 24);
     font-size: vw.vw-calc(14 16);
     font-family: 'Cal Sans', sans-serif;
     font-weight: 400;
@@ -104,10 +106,6 @@
     &_panel {
       width: 100%;
 
-      #{$_services}_caption {
-        font-size: vw.vw-calc(8 11);
-      }
-
       p {
         margin: 0 0 u.rem-calc(32);
         font-size: vw.vw-calc(14 24);
@@ -128,7 +126,7 @@
     width: 100%;
     margin: 0 auto;
 
-    @media screen and (min-width: u.rem-calc(600)) {
+    @media screen and (min-width: u.rem-calc(1024)) {
       max-width: max-content;
     }
   }
@@ -140,7 +138,7 @@
     justify-content: center;
     gap: u.rem-calc(16);
 
-    @media screen and (min-width: u.rem-calc(600)) {
+    @media screen and (min-width: u.rem-calc(1024)) {
       flex-flow: row wrap;
     }
   }
@@ -153,7 +151,7 @@
     position: relative;
     width: 100%;
     min-width: auto;
-    min-height: vw.vw-calc(44 48);
+    min-height: vw.vw-calc(44 56);
     padding: u.rem-calc(6 32);
     font-size: vw.vw-calc(16 18);
     font-family: var(--font-chivo);
@@ -165,7 +163,7 @@
     border-radius: u.rem-calc(56);
     background-color: c.$blue;
 
-    @media screen and (min-width: u.rem-calc(600)) {
+    @media screen and (min-width: u.rem-calc(1024)) {
       width: auto;
       min-width: u.rem-calc(260);
     }

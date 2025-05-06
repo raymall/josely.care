@@ -6,9 +6,10 @@
 .Footer {
   width: 100%;
   margin: 0 auto;
-  padding: vw.vw-calc(24 32) vw.vw-calc(24 80);
+  padding: vw.vw-calc(48 64) vw.vw-calc(24 80);
   text-align: center;
   color: c.$blue;
+  background: rgba(c.$light-blue, .05);
 
   small {
     display: block;
@@ -23,7 +24,7 @@
     gap: vw.vw-calc(32 48);
     padding-bottom: vw.vw-calc(40 80);
 
-    @media screen and (min-width: u.rem-calc(600)) {
+    @media screen and (min-width: u.rem-calc(1024)) {
       grid-template-columns: .75fr 1fr;
     }
   }
@@ -42,7 +43,7 @@
     letter-spacing: u.rem-calc(-1);
     color: c.$blue;
 
-    @media screen and (min-width: u.rem-calc(600)) {
+    @media screen and (min-width: u.rem-calc(1024)) {
       justify-self: start;
     }
   }
@@ -54,7 +55,7 @@
     justify-content: center;
     gap: u.rem-calc(12);
 
-    @media screen and (min-width: u.rem-calc(600)) {
+    @media screen and (min-width: u.rem-calc(1024)) {
       justify-content: start;
     }
 
@@ -77,7 +78,7 @@
     justify-content: center;
     gap: u.rem-calc(24);
 
-    @media screen and (min-width: u.rem-calc(600)) {
+    @media screen and (min-width: u.rem-calc(1024)) {
       flex-flow: row nowrap;
       justify-content: start;
     }
