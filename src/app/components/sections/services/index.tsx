@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import styles from './styles.module.scss'
 import clsx from 'clsx'
-import { HealthIcon, LifeIcon } from '@/app/ui/icons'
 
 export default function ServicesSection() {
   const [openAccordion, setOpenAccordion] = useState<number | null>(0)
@@ -38,9 +37,7 @@ export default function ServicesSection() {
               onClick={() => handleAccordionClick(1)}
               onKeyDown={(e) => handleKeyDown(e, 1)}
             >
-              <span>
-                Salud
-              </span>
+              Salud
             </button>
             <div
               id="accordion-panel-1"
@@ -48,11 +45,11 @@ export default function ServicesSection() {
               aria-labelledby="accordion-1"
               hidden={openAccordion !== 1}
             >
-              {/* <p>
-                Tu salud es prioridad, y contar con una buena cobertura te brinda acceso a atención oportuna y de calidad. Estoy aquí para ayudarte a elegir un seguro que te acompañe en cada etapa, sin complicaciones.
-              </p> */}
+              <p>
+                Tu salud es prioridad y contar con una buena cobertura significa tener acceso a atención oportuna y de calidad, con los mejores especialistas del mundo.
+              </p>
               <div className={styles.Services_actions}>
-                {/* <small className={styles.Services_caption}>Más información</small> */}
+                <small className={styles.Services_caption}>Más información</small>
                 <div className={styles.Services_buttons}>
                   <a
                     href={`https://wa.me/18296452301?text=${encodeURIComponent('Hola Josely, necesito un seguro de salud')}`}
@@ -87,9 +84,7 @@ export default function ServicesSection() {
               onClick={() => handleAccordionClick(2)}
               onKeyDown={(e) => handleKeyDown(e, 2)}
             >
-              <span>
-                Vida
-              </span>
+              Vida
             </button>
             <div
               id="accordion-panel-2"
@@ -97,7 +92,11 @@ export default function ServicesSection() {
               aria-labelledby="accordion-2"
               hidden={openAccordion !== 2}
             >
+              <p>
+                Proteger a los tuyos también es una forma de amar. Un seguro de vida te permite garantizar estabilidad y respaldo para tus seres queridos,  en caso de que faltes.
+              </p>
               <div className={styles.Services_actions}>
+                <small className={styles.Services_caption}>Más información</small>
                 <div className={styles.Services_buttons}>
                   <a
                     href={`https://wa.me/18296452301?text=${encodeURIComponent('Hola Josely, necesito información sobre los seguros de vida.')}`}
@@ -129,7 +128,7 @@ export default function ServicesSection() {
               hidden={openAccordion !== 3}
             >
               <p>
-                Tu hogar, tu negocio y tus bienes merecen estar protegidos. Un seguro de riesgos te ayuda a enfrentar imprevistos con mayor tranquilidad. Juntos encontraremos la cobertura ideal para ti.
+                Tu hogar, tu negocio y tus bienes merecen estar protegidos. Un seguro de riesgos te ayuda a enfrentar imprevistos con mayor tranquilidad.
               </p>
               <div className={styles.Services_actions}>
                 <small className={styles.Services_caption}>Más información</small>

@@ -1,6 +1,6 @@
 {
-  "name": "link-hub",
-  "version": "0.1.0",
+  "name": "josely.care",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -23,7 +23,7 @@
     "eslint": "^8",
     "eslint-config-next": "15.3.1",
     "typescript": "^5",
-    "vw-calc": "^1.0.4"
+    "vw-calc": "^1.0.7"
   },
   "overrides": {
     "@types/react": "19.1.2",

@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 $white: #F8F5E9;
 $black: #373435;
 $ochre: #b39f00;
@@ -9,5 +11,5 @@ $text-primary: #f3f8ff;
 $border: #27374d;
 $icon: #4477CE;
 $gray: #9DB2BF;
-$divider: darken(#F8F5E9, 10%);
+$divider: color.adjust(#F8F5E9, $lightness: -10%);
 $divider: #e6e2d7;
