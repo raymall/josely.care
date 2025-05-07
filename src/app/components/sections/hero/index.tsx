@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { WhatsappIcon } from '@/app/ui/icons'
 import styles from './styles.module.scss'
-import ContactSection from '@/app/components/sections/contact'
-import DividerSection from '../divider'
+import DividerSection from '@/app/components/sections/divider'
+import ServicesSection from '@/app/components/sections/services'
 
 export default function HeroSection() {
   return (
@@ -26,8 +26,7 @@ export default function HeroSection() {
 
       <DividerSection />
 
-      <ContactSection />
-        
+      <ServicesSection />
     </section>
   )
 }

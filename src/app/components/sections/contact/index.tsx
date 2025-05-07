@@ -9,6 +9,7 @@ export default function ContactSection() {
           <p className={styles.Contact_title}>
             <span>Agenda una cita </span>
             <a
+              target='_blank'
               href="https://calendly.com/joselyseguros/asesoria"
               className={styles.Contact_title__highlight}
             >

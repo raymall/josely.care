@@ -1,10 +1,10 @@
 import clsx from 'clsx'
 
 import { chivo, encode_sans, ibm_plex_serif } from '@/app/ui/fonts'
-import AboutMeSection from '@/app/components/sections/about-me'
-import HeroSection from '@/app/components/sections/hero'
 import DividerSection from '@/app/components/sections/divider'
-import ServicesSection from '@/app/components/sections/services'
+import HeroSection from '@/app/components/sections/hero'
+import ContactSection from './components/sections/contact'
+import AboutMeSection from '@/app/components/sections/about-me'
 import Footer from '@/app/components/footer'
 
 export default async function Home() {
@@ -23,15 +23,15 @@ export default async function Home() {
       <main>
         <HeroSection />
 
-        <DividerSection />
+        {/* <DividerSection /> */}
 
-        <ServicesSection />
+        <ContactSection />
 
-        <DividerSection />
+        {/* <DividerSection /> */}
 
         <AboutMeSection />
         
-        <DividerSection />
+        {/* <DividerSection /> */}
       </main>
       
 

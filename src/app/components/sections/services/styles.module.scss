@@ -10,8 +10,8 @@
   width: 100%;
   height: auto;
   margin: 0;
-  padding: vw.vw-calc(48 64) vw.vw-calc(24 80);
-  background: rgba(c.$light-blue, .05);
+  padding: vw.vw-calc(48 64) vw.vw-calc(24 80) 0;
+  // background: rgba(c.$light-blue, .05);
   overflow: hidden;
 
   &_content {
@@ -66,58 +66,97 @@
     }
   }
   
-  &_tabs {
+  &_accordion {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    // gap: u.rem-calc(16);
+    width: 100%;
+    max-width: vw.vw-calc(327 600);
     margin: 0 auto;
-    padding: u.rem-calc(4);
-    border-radius: u.rem-calc(40);
-    border: u.rem-calc(2) solid c.$blue;
   }
 
-  &_tab {
-    flex: 1;
+  &_accordion_item {
+    width: 100%;
+    border-bottom: u.rem-calc(1) solid c.$divider;
+    // border-radius: u.rem-calc(8);
+    background: c.$white;
+    overflow: hidden;
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: vw.vw-calc(48 64);
+    }
+
+    &__active {
+      border-bottom: 0;
+
+      // &:last-child {
+      //   padding-bottom: vw.vw-calc(48 64);
+      // }
+    }
+  }
+
+  &_accordion_button {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    padding: u.rem-calc(12 24);
-    font-size: vw.vw-calc(14 16);
+    padding: u.rem-calc(16 0);
+    font-size: vw.vw-calc(16 18);
     font-family: 'Cal Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1;
     letter-spacing: u.rem-calc(1);
     color: c.$blue;
     background: transparent;
-    border-radius: u.rem-calc(40);
+    // background: rgba(c.$light-blue, .05);
     border: 0;
     outline: 0;
     cursor: pointer;
     appearance: none;
+    transition: all 0.3s ease;
 
-    &__active {
-      color: c.$white;
-      background: c.$light-blue;
+    &::after {
+      content: '+';
+      font-size: vw.vw-calc(24 28);
+      font-weight: 400;
+      transition: transform 0.3s ease;
     }
 
-    &_panel {
-      width: 100%;
+    &__active {
+      // color: c.$white;
+      // background: c.$blue;
+      // border-bottom: u.rem-calc(1) solid c.$divider;
 
-      p {
-        margin: 0 0 u.rem-calc(32);
-        font-size: vw.vw-calc(14 24);
-        font-family: var(--font-ibm-plex-serif);
-        font-weight: 600;
-        line-height: 1.4;
-        color: c.$blue;
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
 
-        strong {
-          font-weight: 700;
-          border-bottom: vw.vw-calc(2 4) solid c.$blue;
-        }
+  &_accordion_panel {
+    max-height: 0;
+    padding: vw.vw-calc(16 24);
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+    &__open {
+      max-height: 1000px;
+      border-radius: u.rem-calc(8);
+      background: rgba(c.$light-blue, .05);
+    }
+
+    p {
+      margin-bottom: vw.vw-calc(12 24);
+      font-size: vw.vw-calc(14 18);
+      font-family: var(--font-ibm-plex-serif);
+      font-weight: 500;
+      line-height: 1.2;
+      color: c.$blue;
+
+      strong {
+        font-weight: 700;
       }
     }
   }
@@ -125,8 +164,9 @@
   &_actions {
     width: 100%;
     margin: 0 auto;
+    // padding: u.rem-calc(16 24);
 
-    @media screen and (min-width: u.rem-calc(1024)) {
+    @media screen and (min-width: u.rem-calc(768)) {
       max-width: max-content;
     }
   }
@@ -136,9 +176,9 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    gap: u.rem-calc(16);
+    gap: vw.vw-calc(8 16);
 
-    @media screen and (min-width: u.rem-calc(1024)) {
+    @media screen and (min-width: u.rem-calc(768)) {
       flex-flow: row wrap;
     }
   }
@@ -160,12 +200,12 @@
     line-height: 1;
     letter-spacing: u.rem-calc(-1);
     color: c.$white;
-    border-radius: u.rem-calc(56);
+    border-radius: u.rem-calc(8);
     background-color: c.$blue;
 
-    @media screen and (min-width: u.rem-calc(1024)) {
-      width: auto;
-      min-width: u.rem-calc(260);
-    }
+    // @media screen and (min-width: u.rem-calc(768)) {
+    //   width: auto;
+    //   min-width: u.rem-calc(260);
+    // }
   }
 }
