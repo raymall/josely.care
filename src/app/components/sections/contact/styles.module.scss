@@ -9,7 +9,8 @@
   width: 100%;
   height: auto;
   margin: 0;
-  padding: vw.vw-calc(48 64) 0;
+  padding: vw.vw-calc(48 64) vw.vw-calc(24 80);
+  background: rgba(c.$light-blue, .05);
   overflow: hidden;
 
   &_content {
