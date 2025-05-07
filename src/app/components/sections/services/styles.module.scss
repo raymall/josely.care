@@ -11,7 +11,6 @@
   height: auto;
   margin: 0;
   padding: vw.vw-calc(48 64) vw.vw-calc(24 80) 0;
-  // background: rgba(c.$light-blue, .05);
   overflow: hidden;
 
   &_content {
@@ -69,7 +68,6 @@
   &_accordion {
     display: flex;
     flex-flow: column nowrap;
-    // gap: u.rem-calc(16);
     width: 100%;
     max-width: vw.vw-calc(327 600);
     margin: 0 auto;
@@ -78,7 +76,6 @@
   &_accordion_item {
     width: 100%;
     border-bottom: u.rem-calc(1) solid c.$divider;
-    // border-radius: u.rem-calc(8);
     background: c.$white;
     overflow: hidden;
 
@@ -89,10 +86,6 @@
 
     &__active {
       border-bottom: 0;
-
-      // &:last-child {
-      //   padding-bottom: vw.vw-calc(48 64);
-      // }
     }
   }
 
@@ -110,7 +103,6 @@
     letter-spacing: u.rem-calc(1);
     color: c.$blue;
     background: transparent;
-    // background: rgba(c.$light-blue, .05);
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -125,10 +117,6 @@
     }
 
     &__active {
-      // color: c.$white;
-      // background: c.$blue;
-      // border-bottom: u.rem-calc(1) solid c.$divider;
-
       &::after {
         transform: rotate(45deg);
       }
@@ -164,7 +152,6 @@
   &_actions {
     width: 100%;
     margin: 0 auto;
-    // padding: u.rem-calc(16 24);
 
     @media screen and (min-width: u.rem-calc(768)) {
       max-width: max-content;
@@ -202,10 +189,5 @@
     color: c.$white;
     border-radius: u.rem-calc(8);
     background-color: c.$blue;
-
-    // @media screen and (min-width: u.rem-calc(768)) {
-    //   width: auto;
-    //   min-width: u.rem-calc(260);
-    // }
   }
 }

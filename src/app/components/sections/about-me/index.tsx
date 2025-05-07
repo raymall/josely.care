@@ -20,7 +20,6 @@ export default function AboutMeSection() {
                 alt={'Profile Picture'}
                 src={'/images/hero-section.jpg'}
               />
-              {/* <figcaption>Josely Méndez. Asesora de Seguros, Grupo Montero Torres.</figcaption> */}
             </figure>
           </div>
           <p>
@@ -55,7 +54,6 @@ export default function AboutMeSection() {
               alt={'Profile Picture'}
               src={'/images/hero-section.jpg'}
             />
-            {/* <figcaption>Josely Méndez. Asesora de Seguros, Grupo Montero Torres.</figcaption> */}
           </figure>
         </div>
       </div>
