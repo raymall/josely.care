@@ -69,8 +69,11 @@
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    max-width: vw.vw-calc(327 600);
     margin: 0 auto;
+
+    @media screen and (min-width: u.rem-calc(768)) {
+      max-width: vw.vw-calc(327 600);
+    }
   }
 
   &_accordion_item {
