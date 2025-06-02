@@ -51,12 +51,17 @@ export default function Footer() {
                 height={50}
               />
             </a>
-            {/* <a
+            <a
               target='_blank'
-              href="https://www.instagram.com/grupomonterotorres/"
+              href="#"
             >
-              <LogoGrupoMonteroTorres />
-            </a> */}
+              <Image
+                src="/images/logo-marmol-montero-asociados.svg"
+                alt="Mármol Montero & Asociados Logo"
+                width={200}
+                height={50}
+              />
+            </a>
           </nav>
         </div>
       </div>

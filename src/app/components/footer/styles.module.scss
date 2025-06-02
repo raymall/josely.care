@@ -81,6 +81,7 @@
     @media screen and (min-width: u.rem-calc(1024)) {
       flex-flow: row nowrap;
       justify-content: start;
+      gap: u.rem-calc(64);
     }
 
     a {
